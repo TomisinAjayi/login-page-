@@ -1,0 +1,109 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: #a7a7bd52 ;
+  height: 650px;
+  width: 100%;
+}
+.overlay {
+  background-color: #000000cc;
+  height: 650px;
+  position: absolute;
+  width: 100%;
+}
+.inner-box {
+  margin-left: 317px;
+  margin-top: 120px;
+  background-color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 50%;
+  border-radius: 30px;
+}
+p {
+  color: gray;
+  padding: 0px;
+}
+h4 {
+  text-align: center;
+  margin-top: 0px;
+  font-weight: 800;
+  font-size: 25px;
+  color: #337ab7;
+}
+h5 {
+  font-size: 20px;
+  margin-top: 25px;
+}
+#lockicon {
+  margin-left: 340px;
+  font-size: 35px;
+  position: absolute;
+  color: #337ab7;
+}
+#loginbutton {
+
+}
+#password {
+  background-color: #a7a7bd52;
+}
+#username {
+  background-color: #a7a7bd52;
+
+}
+.support {
+  width: 50%;
+  margin-left: 140px;
+  margin-top: 30px;
+  font-size: 15px;
+}
+.Remember {
+  position: relative;
+  cursor: pointer;
+}
+.Remember input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  margin-left: -30px;
+}
+.Remember:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.Remember input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.Remember input:checked ~ .checkmark:after {
+  display: block;
+}
+.Remember .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.col-md-6.forgot {
+  padding-left: 0px;
+}
