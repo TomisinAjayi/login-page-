@@ -63,47 +63,42 @@ h5 {
   position: relative;
   cursor: pointer;
 }
-.Remember input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
 .checkmark {
   position: absolute;
   top: 0;
   left: 0;
-  height: 25px;
-  width: 25px;
   background-color: #eee;
-  margin-left: -30px;
-}
-.Remember:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-.Remember input:checked ~ .checkmark {
-  background-color: #2196F3;
-}
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-.Remember input:checked ~ .checkmark:after {
-  display: block;
-}
-.Remember .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
 }
 .col-md-6.forgot {
   padding-left: 0px;
+}
+@media (min-device-width: 769px) and (max-device-width: 1200px){
+  .inner-box {
+    margin: auto;
+    margin-top: 120px;
+    width: 100%;
+  }
+  #lockicon {
+    margin-left: 140px;
+  }
+  .support{
+    margin-left: 277px;
+  }
+}
+@media (max-device-width: 768px) {
+  .inner-box {
+    margin: auto;
+    margin-top: 120px;
+    width: 100%;
+  }
+  #lockicon {
+    margin-left: 180px;
+  }
+  .col-md-6.forgot{
+    float: right;
+    margin-top: -26px;
+  }
+  .Remember{
+    margin-left: -115px
+  }
 }
